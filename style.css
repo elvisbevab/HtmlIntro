@@ -1,0 +1,253 @@
+/*Reseting all CSS*/
+*{
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto Serif', serif; 
+	line-height: 1;
+}
+
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+    padding: 1em;
+    /* margin: 1em; */
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+nav {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+    background-color: #636940;
+    color: white;
+    padding: 2em;
+    
+}
+
+.nav-left {
+    /* border: 2px solid green; */
+    display: flex;
+    align-items: center;
+}
+
+.nav-right {
+    /* border: 2px solid green; */
+    width: 80%;
+}
+
+.nav-right a{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    color: lightcyan;
+
+    transition-property: background-color color font-size;
+    transition-duration: 1s;
+    transition-delay: 0.2s;
+}
+
+.nav-right a:hover{
+    background-color: #B4E7CE;
+    color: darkcyan;
+}
+
+.nav-right a:active{
+    color: red;
+}
+
+
+
+ul {
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    /* border: 2px solid green; */
+}
+
+header {
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+header h1{
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px #636940, 0 0 1em #59A96A, 0 0 0.2em #B4E7CE;
+}
+header p{
+    text-shadow: inherit;
+    text-align: center;
+    margin: 1em 10%;
+}
+
+#duck {
+    /* border: 2px solid yellow; */
+    display: flex;
+    background-color: #59A96A;
+    color: white;
+    justify-content: center;
+}
+
+.text {
+    /* border: 2px solid yellow; */
+    align-self: center;
+    text-align: center;
+    width: 40%;
+}
+
+.text p {
+    /* border: 2px solid yellow; */
+}
+
+.duck {
+    /* border: 2px solid yellow; */
+    width: 40%;
+    
+    
+}
+
+.duck img {
+    height: 274px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#emergency {
+    /* border: 2px solid blue; */
+    background-color: #B4E7CE;
+    color: black;
+}
+
+#emergency a{
+    font-size: 2em;
+    text-decoration: none;
+    color: black;
+
+}   
+
+#emergency a:hover{
+    font-size: 2.6em;
+    font-weight: bold;
+}
+
+#emergency a:visited{
+    color: darkcyan;
+}
+
+.grid-container {
+    /* border: 2px solid blue; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 1%;
+}
+
+.grid-item {
+    border: 2px solid #474A2C;
+    display: flex;
+    justify-content: center;
+    height: 150px;
+    align-items: center;
+
+}
+
+footer {
+    /* border: 2px solid rgba(255, 0, 0, 0.521); */
+    background-color: #474A2C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+footer *{
+    /* border: red solid 1px; */
+}
+footer form{
+    width: 40%;
+}
+
+footer form *{
+    margin: 0.2em 0;
+    width: 100%;
+}
+
+#subject, #textarea, #subbtn{
+    padding: 0.3em;
+}
+#subbtn{
+    border: black solid 1px;
+    width: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.5s;
+}
+
+#subbtn:hover{
+    letter-spacing: 0.25em;
+}
+
+
+
+footer img{
+    /* border: #B4E7CE 1px solid; */
+    display: block ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    display: block;
+}
+
